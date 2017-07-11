@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stoneland</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="map-outer-container">
+		<div class="map-container">
+		    <img class="map-image map-image-desktop" src="assets/map.png" alt="Map of Scotland">
+		    <img class="map-pin" id="cawdor" src="assets/pin.png" alt="Cawdor Map Pin">
+		    <img class="map-pin" id="dalwhinnie" src="assets/pin.png" alt="Dalwhinnie Map Pin">
+		    <img class="map-pin" id="inver-stone" src="assets/pin.png" alt="Inver Stone Map Pin">
+		    <img class="map-pin" id="aboyne" src="assets/pin.png" alt="Aboyne Map Pin">
+		    <img class="map-pin" id="potarch-bridge" src="assets/pin.png" alt="Potarch Bridge Map Pin">
+		    <img class="map-pin" id="castle-menzies" src="assets/pin.png" alt="Castle Menzies Map Pin">
+		    <img class="map-pin" id="fianna-glyn-lyon" src="assets/pin.png" alt="Fianna/Glyn Lyon Map Pin">
+		    <img class="map-pin" id="puterach" src="assets/pin.png" alt="Puterach Map Pin">
+		    <p class="city-text" id="glasgow">GLASGOW</p>
+		    <span class="circle" id="left"></span>
+		    <p class="city-text" id="edinburgh">EDINBURGH</p>
+		    <span class="circle" id="right"></span>
+		</div>
+	</div>
+
+	<header class="row">
+		<img class="stoneland-text" src="assets/stoneland-text.svg" alt="Stoneland Text">	
+	</header>
+
+	<div class="row mobile-film-button">
+			<a href="#" class="watch-film-button">Watch Film <span class="arrow-right"></span></a>
+	</div>
+
+	<div class="row desktop-film-button">
+		<a href="#" class="watch-film-button">Watch The Film <span class="arrow-right"></span></a>
+	</div>
+
+	<div class="container-fluid">
+		<div class="wrapper">
+			<div class="row">
+				<section class="col-xs-10 col-sm-9 col-md-7 center-block intro">
+					<p>There are few places on earth as intimately tied to historic feats of strength as the Highlands of Scotland. Lifting stones, formed over centuries by wind and river erosion, can be found all over Scotland – each with its own history and local lore. </p>
+				</section>
+			</div>
+			<div class="row">
+				<section class="col-xs-10 col-sm-9 col-md-7 center-block map">
+					<div class="col-xs-12 col-sm-12 col-md-12 center-block">
+						<hr>
+					</div>
+					<h2>ON LOCATION</h2>
+					<p>Explore the map to learn more about the landmarks visited in the film.</p>
+				</section>
+			</div>
+
+			<div class="row">
+				<section class="col-xs-10 col-sm-9 col-md-7 center-block video-section">
+					<div class="col-xs-12 col-sm-12 col-md-12 center-block">
+						<hr>
+					</div>
+					<div class="col-xs-10 col-sm-11 col-md-12 center-block">
+						<h2>STORIES OF THE STONES</h2>
+					</div>
+					<div class="video-row">
+						<div class="col-sm-4 col-md-4 video">
+							<div class="video-still">
+								<a class="toggle-modal" href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bDmSL31nnfo?rel=0&amp;showinfo=0">
+									<img class="img-responsive video-still-image" src="assets/stoneland-video-still-1.jpg" alt="Landscape Video Still">
+									<img class="play-icon" src="assets/icon-play-wsh.png" alt="Play Icon">
+								</a>
+							</div>
+
+							<h3>SCOTLAND BY AIR</h3>
+							<p>An aerial view of the rough terrain that makes up the Scottish Highlands.</p>
+						</div>
+
+						<div class="col-sm-4 col-md-4 video">
+							<div class="video-still">
+								<a class="toggle-modal" href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/pGnszxqCU5s?rel=0&amp;showinfo=0">
+									<img class="img-responsive video-still-image" src="assets/stoneland-video-still-2.jpg" alt="Drummers Video Still">
+									<img class="play-icon" src="assets/icon-play-wsh.png" alt="Play Icon">
+								</a>
+							</div>
+							<h3>THE SOUL OF SCOTLAND</h3>
+							<p>The national anthem of Scotland as performed at the Aboyne Highland Games.</p>
+						</div>
+
+						<div class="col-sm-4 col-md-4 video">
+							<div class="img-responsive video-still">
+								<a class="toggle-modal" href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/CGPfgz58JtA?rel=0&amp;showinfo=0">
+									<img class="img-responsive video-still-image" src="assets/stoneland-video-still-3.jpg" alt="Man Lifting Boulder Video Still">
+									<img class="play-icon" src="assets/icon-play-wsh.png" alt="Play Icon">
+								</a>
+							</div>
+							<h3>WHO IS BILL CRAWFORD</h3>
+							<p>For American Bill Crawford, a physician by day, stone lifting and its Scottish heritage has become a passion.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-9 col-md-7 center-block">
+					<div class="col-xs-10 col-sm-12 col-md-12 center-block">
+						<hr>
+					</div>
+				</div>				
+			</div>
+			
+			<div class="row image-section">
+				<section class="col-xs-12 col-sm-9 col-md-7 center-block image-gallery">
+					<div class="col-xs-10 col-sm-11 col-md-12 center-block">
+						<h2>STORIES OF THE STONES</h2>
+					</div>
+					<div class="image-row">
+						<div class="col-xs-12 col-sm-4 col-md-4 gallery-row desktop-gallery-image">
+							<img class="img-responsive " src="assets/stoneland-image-1.jpg" alt="Stone Building">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 gallery-row">
+							<img class="img-responsive center-block" src="assets/stoneland-image-2.jpg" alt="Man Lifting Boulder">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 gallery-row desktop-gallery-image">
+							<img class="img-responsive" src="assets/stoneland-image-3.jpg" alt="Men Playing Bagpipes">
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+            <div class="col-xs-8 col-sm-6 col-md-2 center-block">        
+                <a href="#" class="view-gallery-button" data-toggle="modal" data-target=".bs-modal">VIEW GALLERY <span class="arrow-right"></span></a>
+            </div>
+        </div>
+
+		<div class="row">
+			<footer class="col-xs-10 col-sm-9 col-md-7 center-block">
+				<div class="col-xs-12 col-sm-12 col-md-12 center-block desktop-section-line">
+					<hr>
+				</div>
+				<img src="assets/icon-fb.png" alt="Facebook Icon">
+				<img src="assets/icon-tw.png" alt="Twitter Icon">
+			</footer>
+		</div>
+	</div>
+
+	<div class="video-container container row">
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+			<button type="button" class="close video-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			        <div class="modal-body">
+		                <iframe width="640" height="360" src="https://www.youtube.com/embed/bDmSL31nnfo?rel=0&amp;showinfo=0"allowfullscreen></iframe>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="carousel-container container row">
+	    <div class="modal fade bs-modal" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <div class="modal-dialog col-xs-11 col-sm-11 col-md-11 center-block">
+	            <div class="modal-content">
+	                <div id="image-carousel" class="carousel slide" data-ride="carousel">	                	
+	                    <div class="carousel-inner">
+	                        <div class="item active">
+	                            <img class="img-responsive" src="assets/stoneland-gallery-1.jpg" alt="Stone Building">
+	                        </div>
+	                        <div class="item">
+	                            <img class="img-responsive" src="assets/stoneland-gallery-2.jpg" alt="...">
+	                        </div>
+	                        <div class="item">
+	                            <img class="img-responsive" src="assets/stoneland-gallery-3.jpg" alt="...">
+	                        </div>
+	                        <div class="item">
+	                            <img class="img-responsive" src="assets/stoneland-gallery-4.jpg" alt="...">
+	                        </div>
+	                        <div class="item">
+	                            <img class="img-responsive" src="assets/stoneland-gallery-5.jpg" alt="...">
+	                        </div>
+	                    </div>	                    
+	                </div>
+	                <a class="left" href="#image-carousel" role="button" data-slide="prev">
+	                    <span class="chevron-arrow chevron-arrow-left"></span>
+	                </a>
+	                <a class="right" href="#image-carousel" role="button" data-slide="next">
+	                    <span class="chevron-arrow chevron-arrow-right"></span>
+	                </a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+   	<script src="js/app.js"></script>
+</body>
+</html>
+
+
+

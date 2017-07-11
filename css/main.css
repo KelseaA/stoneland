@@ -1,0 +1,570 @@
+/****************************************************
+					Global Styling
+*****************************************************/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	overflow-x: hidden;
+	height: 100%;
+}
+body,
+.container-fluid,
+.map-container,
+.wrapper{
+	position: relative;
+	z-index: -1;
+}
+.container-fluid{
+	padding: 0;
+}
+.center-block {  
+	display: block;  
+	margin-right: auto;  
+	margin-left: auto;  
+	float: none;
+}
+hr{
+	margin: 0;
+	border-color: #000;
+}
+a,
+a:hover,
+a:visited,
+a:link{
+	text-decoration: none;
+	color: #fff;
+}
+*:focus{
+	outline: none !important;
+}
+.watch-film-button,
+.view-gallery-button{
+	display: block;
+	margin: 0 auto;
+	width: 176px;
+	padding: 13px 15px;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #000;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1.86px;
+	border: none;
+}
+.arrow-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 8px;
+	border-color: transparent transparent transparent #fff;
+}
+p{
+	font-size: 14px;
+	line-height: 24px;
+}
+h2{
+	padding-top: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+.video-section h2,
+.image-gallery h2{
+	padding-bottom: 15px;
+}
+h3,
+.video p{
+	text-align: left;
+	line-height: 19px;
+}
+h3{
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	margin: 10px 0 5px;
+}
+
+
+
+/****************************************************
+					Modal Styling
+*****************************************************/
+
+.modal-open{
+	background: rgba(0, 0, 0, .85);
+}
+.modal {
+	text-align: center;
+	padding: 0 !important;
+}
+.modal img,
+.modal iframe{
+	width: 100%;
+}
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+.modal-dialog {
+	width: 90%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.close,
+.close:hover{
+	color: #fff;
+	opacity: 1;
+    font-weight: normal;
+}
+.close{
+    background: none;
+    font-size: 44px;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 1;
+}
+.video-close{
+	display: none;
+}
+
+
+/****************************************************
+				Header/Intro Styling
+*****************************************************/
+
+header{
+	background: url('../assets/stoneland-header.jpg') top center no-repeat;
+	height: 192px;
+	background-size: cover;
+	margin-bottom: -22.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stoneland-text{
+	width: 75%;
+}
+.desktop-film-button{
+	display: none;
+}
+.intro p{
+	padding: 15px 24px 10px;
+}
+
+
+
+
+/****************************************************
+					Map Styling
+*****************************************************/
+
+.map-outer-container{
+	position: absolute;
+	top: 360px;
+	left: calc(100vw - 600px);
+	z-index: -1;
+}
+.map-container {
+	width: 600px;
+    position: relative;
+}
+.map-image {
+    width: 100%;
+}
+.map h2{
+	padding-top: 30px;
+	margin: 0;
+}
+.map p{
+	padding: 15px 0;
+	margin-bottom: 345px;
+}
+.map-pin{
+    width: 3%;
+}
+.map-pin,
+.city-text,
+.circle {
+    display: block;
+    position: absolute;
+}
+.city-text{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.17px;
+    font-weight: bold;
+    font-style: italic;
+}
+.circle{
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+}
+#cawdor {
+    top: 27%;
+    left: 63%;
+}
+#dalwhinnie {
+    top: 40%;
+    left: 59%;
+}
+#inver-stone {
+    top: 38%;
+    left: 72%;
+}
+#aboyne {
+    top: 36%;
+    left: 80%;
+}
+#potarch-bridge {
+    top: 36.5%;
+    left: 82%;
+}
+#castle-menzies {
+    top: 46%;
+    left: 63%;
+}
+#fianna-glyn-lyon {
+    top: 48%;
+    left: 56%;
+}
+#puterach {
+    top: 54%;
+    left: 55%;
+}
+
+#glasgow {
+    top: 66%;
+    left: 53%;
+}
+
+#left {
+    top: 69%;
+    left: 57.5%;
+}
+
+#edinburgh {
+    top: 64%;
+    left: 69%;
+}
+
+#right {
+    top: 67%;
+    left: 74%;
+}
+
+
+
+/****************************************************
+                Youtube Modal Styling
+*****************************************************/
+
+.video{
+	padding-bottom: 25px;
+}
+
+.video-still{
+	position: relative;
+	cursor: pointer;
+}
+
+.play-icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.video p{
+	font-size: 12px;
+}
+.video-container .modal{
+    margin: 0 auto;
+}
+.video-container .modal-content{
+    box-shadow: none;
+}
+.video-container .modal-body{
+    background-color: #000;
+    border-radius: 0;
+    padding: 0;
+}
+.video-container .modal-content,
+.close,
+.video-container .modal-body iframe{
+    border: none;
+}
+
+
+
+/****************************************************
+				Image Gallery Styling
+*****************************************************/
+
+.image-section{
+	margin: 0;
+	padding: 0;
+	margin-bottom: -22.5px;
+}
+.image-gallery,
+.gallery-row{
+	padding: 0;
+}
+.view-gallery-button{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.desktop-gallery-image{
+	display: none;
+}
+.chevron-arrow{
+	position: absolute;
+	top: 50%;
+	opacity: 1;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	width: 25px;
+	height: 25px;
+}
+.chevron-arrow-left {
+  transform: rotate(-225deg);
+  left: -7%;
+}
+.chevron-arrow-right {
+  transform: rotate(-45deg);
+  right: -7%;
+}
+
+
+
+/****************************************************
+					Footer Styling
+*****************************************************/
+
+footer img{
+	padding: 80px 15px;
+}
+.desktop-section-line{
+	display: none;
+}
+
+
+
+/****************************************************
+					Media Queries
+*****************************************************/
+
+@media screen and (min-width: 450px) {
+	.map p{
+		margin-bottom: 450px;
+	}
+	.image-row img{
+		width: 80%;
+	}
+}
+@media screen and (min-width: 600px) {
+	.modal-dialog {
+		width: 75%;
+	}
+	.video-close{
+		display: block;
+	}
+	header{		
+		height: 350px; 
+	}
+	h2{
+	 	padding-top: 20px;
+		font-size: 24px;
+		letter-spacing: 3px;
+	}
+	.map-outer-container{
+		top: 400px;
+		left: calc(50vw - 500px);
+	}
+	.map-container {
+		width: 100%;
+	}
+	.map p{
+		margin-bottom: 650px;
+	}
+	.map-pin{
+	    width: 2%;
+	}
+	#cawdor {
+	    top: 28%;
+	    left: 63%;
+	}
+	#dalwhinnie {
+	    top: 43%;
+	    left: 58%;
+	}
+	#inver-stone {
+	    top: 40%;
+	    left: 72%;
+	}
+	#aboyne {
+	    top: 39%;
+	    left: 80%;
+	}
+	#potarch-bridge {
+	    top: 39.5%;
+	    left: 82%;
+	}
+	#castle-menzies {
+	    top: 49%;
+	    left: 63%;
+	}
+	#fianna-glyn-lyon {
+	    top: 50%;
+	    left: 56%;
+	}
+	#puterach {
+	    top: 55%;
+	    left: 55%;
+	}
+	.chevron-arrow{
+		width: 35px;
+		height: 35px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.image-row img{
+		width: 100%;
+	}
+	.desktop-gallery-image{
+		display: inline-block;
+	}
+	.image-gallery{
+		padding: 0 25px;
+		padding-bottom: 40px;
+	}
+	.gallery-row{
+		padding: 0 4px;
+		padding-bottom: 50px;
+	}
+	.desktop-section-line{
+		display: block;
+	}
+}
+@media screen and (min-width: 900px) {
+	.wrapper {
+    	margin-top: -50px;
+	}
+	header{		
+		height: 600px; 
+	}
+	.watch-film-button{
+		width: 200px;
+	}
+	.desktop-film-button{
+		display: block;
+	}
+	.mobile-film-button{
+		display: none;
+	}
+	.stoneland-text{ 
+		width: 65%;
+	}
+	.intro{
+		padding-top: 50px;
+	}
+	.intro p{
+		padding: 50px 40px 30px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.video-section h2,
+	.image-gallery h2{
+		padding-bottom: 30px;
+	}
+	.map-outer-container{
+		top: 725px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.map-container {
+		width: 85%;
+	}
+	.map h2{
+		padding-top: 45px;
+	}
+	.map p{
+		margin-bottom: 500px;
+	}
+	.map-pin{
+	    width: 1.75%;
+	}
+	#glasgow {
+	    top: 67%;
+	    left: 55%;
+	}
+	#edinburgh {
+	    top: 65%;
+	    left: 71%;
+	}
+	.video-container iframe{
+	    width: 100%;
+	    height: 90vh;
+	}
+	.chevron-arrow{
+		border-right: 9px solid #fff;
+		border-bottom: 9px solid #fff;
+		border-radius: 2px;
+		width: 45px;
+		height: 45px;
+	}
+	.close{
+	    top: 30px;
+	    right: 50px;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.map p{
+		margin-bottom: 550px;
+	}
+}
+@media screen and (min-width: 1100px) {
+	.map p{
+		margin-bottom: 650px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.map p{
+		margin-bottom: 750px;
+	}
+	.city-text{
+	    font-size: 14px;
+	}
+	.circle{
+	    width: 10px;
+	    height: 10px;
+	}
+}
+@media screen and (min-width: 1300px) {
+	.map-outer-container{
+		top: 525px;
+	}
+}
+
+
+
+
+
+
+
